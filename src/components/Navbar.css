@@ -5,7 +5,7 @@
   position: fixed;
   width: 100vw;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   font-size: 1.2rem;
   transition-duration: 1s;
   top: 0;
@@ -106,7 +106,7 @@
   }
 
   .nav-menu.active {
-    background: #242424;
+    background: rgb(51 27 24);
     left: 0;
     top: 0;
     height: 100vh;
@@ -163,7 +163,8 @@
     width: 80%;
     text-decoration: none;
     font-size: 1.5rem;
-    background-color: transparent;
+    background: #b17b4b;
+    /* background-color: transparent; */
     color: #fff;
     padding: 14px 20px;
     border: 1px solid #fff;

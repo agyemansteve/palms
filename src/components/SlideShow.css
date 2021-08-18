@@ -69,23 +69,22 @@
 
 
   @media screen and (max-width: 768px){
-    .right-arrow{
+    /* .right-arrow{
       margin-top: 30vh;
-    }
+    } */
     
-    .left-arrow{
-      margin-top: 30vh;
+    .left-arrow,.right-arrow{
+      margin-top: 48vh;
     }
 
     .slide.active {
-          height: 70vh;
+          height: 100vh;
         }
 
         .slide-image {
-          margin-top: 85px;
-          width: 100%;
-          max-height: 50vh;
-          
+          margin-top: 227px;
+          max-width: 100%;
+          max-height: 330px;
       }
   
 

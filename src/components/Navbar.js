@@ -63,13 +63,17 @@ function Navbar(props) {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item' onClick={ScrollToTop} >
               <NavLink to='/'   className='nav-links bounce' onClick={closeMobileMenu}>
-              <div onClick={()=>{
+              <div 
+              
+              // onClick={()=>{
 
-                setTimeout(()=>{
-                   window.location.reload();
-                },900)
+              //   setTimeout(()=>{
+              //      window.location.reload();
+              //   },900)
                
-              }}>
+              // }}
+              
+              >
                   Home
               </div>
                 
@@ -84,13 +88,17 @@ function Navbar(props) {
                 className='nav-links bounce'
                 onClick={closeMobileMenu}
               >
-                 <div onClick={()=>{
+                 <div 
+                 
+                //  onClick={()=>{
 
-                    setTimeout(()=>{
-                      window.location.reload(true);
-                    },900)
+                //     setTimeout(()=>{
+                //       window.location.reload(true);
+                //     },900)
 
-                    }}>
+                //     }}
+                    
+                    >
                       Menu
                     </div>
                                 

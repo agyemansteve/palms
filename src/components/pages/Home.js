@@ -89,7 +89,7 @@ import { Button } from '../Button';
 //  mainBg= {`url(/images/kente.jpg)`} 
 
 mainBg= {   window.innerWidth >= 796 ? `black` : `url(/images/img4.jpg) center fixed`} 
-      textBg= "#000000cc"
+      textBg= "#b17b4b"
       tittleAnime="fade-right"
       paraAnime="fade-down"
       // imgAnime="zoom-out"
@@ -152,7 +152,7 @@ mainBg= "#1b0a08d9"
       <Content
       
           // mainBg= "#331b18"
-          mainBg = "black"
+          mainBg = "#1b0a08"
           // textBg= " black"
           tittleAnime="fade-up"
           paraAnime="fade-down-left"
