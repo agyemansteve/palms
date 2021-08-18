@@ -22,6 +22,7 @@
         /* scroll-snap-align: center; */
     }
     .content-text{
+        margin: 26px;
         padding: 43px 15px;
         text-align: center;
      
@@ -47,9 +48,7 @@
     }
 
 
-     .btns{
-       
-    }
+   
 }
 
 
@@ -58,6 +57,7 @@
 
     .content{
         height: 100vh;
+        background-blend-mode: color;
         /* background-color: rgb(51, 27, 24); */
         /* padding: 4rem 0 2rem 0; */
         -ms-flex-pack: center;

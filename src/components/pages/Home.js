@@ -88,11 +88,11 @@ import { Button } from '../Button';
 // navbar.style.backgroundImage="url(/images/kente.jpg)"
 //  mainBg= {`url(/images/kente.jpg)`} 
 
-mainBg= {` url(/images/img4.jpg) center fixed`} 
+mainBg= {   window.innerWidth >= 796 ? `black` : `url(/images/img4.jpg) center fixed`} 
       textBg= "#000000cc"
       tittleAnime="fade-right"
-      paraAnime="fade-up"
-      imgAnime="fade-up"
+      paraAnime="fade-down"
+      // imgAnime="zoom-out"
       // btnDisplay="none"
       flexDirection="row"
       buttonStyle='btn--primary'
@@ -100,7 +100,7 @@ mainBg= {` url(/images/img4.jpg) center fixed`}
        buttonChild= "MENU"
        btnTo="/menu"
        para = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-       src="images/fd1.jpg"
+       src="images/fd2.jpg"
        id = "kitchen"
         /> 
 
