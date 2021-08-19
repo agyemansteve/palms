@@ -11,7 +11,7 @@ import { ScrollLinkButton } from '../ScrollLinkButton';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Button } from '../Button';
-
+import useWindowDimensions from '../useWindowDimensions';
 
 
  
@@ -20,12 +20,13 @@ import { Button } from '../Button';
 
  const Home=(props)=> {
 
+    const {  width } = useWindowDimensions();
 
-  useEffect(()=>{
-    AOS.init({
-      startEvent: 'DOMContentLoaded',
-      duration:1000});
-  },[])
+    useEffect(()=>{
+      AOS.init({
+        startEvent: 'DOMContentLoaded',
+        duration:1000});
+    },[])
 
  
   return (
@@ -88,8 +89,9 @@ import { Button } from '../Button';
 // navbar.style.backgroundImage="url(/images/kente.jpg)"
 //  mainBg= {`url(/images/kente.jpg)`} 
 
-mainBg= {   window.innerWidth >= 796 ? `black` : `url(/images/img4.jpg) center fixed`} 
-      textBg= "#b17b4b"
+mainBg= {   width <= 796 ? `black` : `url(/images/img4.jpg) center fixed`} 
+      textBg= "black"
+  
       tittleAnime="fade-right"
       paraAnime="fade-down"
       // imgAnime="zoom-out"

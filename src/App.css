@@ -352,3 +352,11 @@ html{
   }
 
 }
+
+
+
+@media screen and (max-height: 490px){
+  .menu-btns{
+    left: 52%;
+  }
+}
