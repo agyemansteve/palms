@@ -48,7 +48,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 100vw;
   justify-content: end;
   margin-right: 2rem;
   transition-duration: 2s;
@@ -60,7 +60,9 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: #a47d5a;
+  /* font-size: 40px; */
+  text-shadow: 0px -1px 0px #080707;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -102,6 +104,7 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    justify-content: center;
     
   }
 
@@ -117,6 +120,7 @@
   .nav-item {
     height: 134px;
       padding: 65px;
+      font-size: 40px;
   }
 
   .nav-links {

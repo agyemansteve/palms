@@ -33,7 +33,7 @@ import useWindowDimensions from '../useWindowDimensions';
     <div id="home"
    
      >
-      
+    
       <HeroSection
       // title="AKWAABA"
       bgVideo='/videos/video-1.mp4'
@@ -89,7 +89,7 @@ import useWindowDimensions from '../useWindowDimensions';
 // navbar.style.backgroundImage="url(/images/kente.jpg)"
 //  mainBg= {`url(/images/kente.jpg)`} 
 
-mainBg= {   width <= 796 ? `black` : `url(/images/img4.jpg) center fixed`} 
+mainBg= {   width <= 796 ? `url(/images/img4.jpg) center fixed` : `url(/images/img4.jpg) center fixed`} 
       textBg= "black"
   
       tittleAnime="fade-right"

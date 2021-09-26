@@ -42,6 +42,9 @@ function Navbar(props) {
   return (
     <div>
       <nav className='navbar'>
+      {/* <svg class="top-svg" width="100%"  viewBox="0 0 1200 250">
+                 <path id="divider" d="M 0 108.306 L 156 74 C 158 76 154 74 245 105 C 620 228 624 232 628 228 L 1200 180.51 V -0 H 1150 C 1100 -0 1000 -0 900 -0 C 800 -0 700 -0 600 -0 C 500 -0 400 -0 300 -0 C 200 -0 100 -0 50 -0 H 0 V 108.306 Z" fill="currentColor"></path>
+        </svg> */}
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo bounce ' onClick={ScrollToTop}>
           <div onClick={()=>{
@@ -57,28 +60,31 @@ function Navbar(props) {
                     </div>
            
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
+          <div className='menu-icon' onClick={ ()=>{
+            const navbar = document.querySelector(".navbar");
+
+            if(navbar.style.top === "auto"){
+
+              navbar.style.top="0"
+
+            }else{
+              navbar.style.top="auto"
+            }
+
+                  handleClick() 
+
+
+                
+         
+         }   }>
             <i className={click ? 'fas fa-times ' : 'fas fa-bars '} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item' onClick={ScrollToTop} >
               <NavLink to='/'   className='nav-links bounce' onClick={closeMobileMenu}>
-              <div 
-              
-              // onClick={()=>{
-
-              //   setTimeout(()=>{
-              //      window.location.reload();
-              //   },900)
-               
-              // }}
-              
-              >
+            
                   Home
-              </div>
-                
               
-                
               </NavLink>
             </li>
             <li className='nav-item'  onClick={ScrollToTop}>
@@ -88,19 +94,9 @@ function Navbar(props) {
                 className='nav-links bounce'
                 onClick={closeMobileMenu}
               >
-                 <div 
-                 
-                //  onClick={()=>{
-
-                //     setTimeout(()=>{
-                //       window.location.reload(true);
-                //     },900)
-
-                //     }}
-                    
-                    >
+               
                       Menu
-                    </div>
+                   
                                 
               </NavLink>
             </li>
@@ -130,6 +126,9 @@ function Navbar(props) {
           </ul>
           {/* {click && <Button to="null" buttonStyle='btn--primary'>Contact</Button>} */}
         </div>
+
+
+        
       </nav>
     </div>
   );
