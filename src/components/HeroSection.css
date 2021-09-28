@@ -12,7 +12,7 @@ video {
 }
 
 #divider{
-  color: white;
+  color: #e7e7e7;
 }
 
 .hero-container {
@@ -70,7 +70,7 @@ video {
 }
 
 .down-arrow{
-  font-size: 22px;
+  font-size: 38px;
   position: relative;
   top: 250px;
   color: #ffffff;
@@ -96,6 +96,9 @@ video {
    margin-top: -68px;
   }
  
+  #divider{
+    color: #1b0a08;
+  }
 .down-arrow{
   top: 302px;
 }

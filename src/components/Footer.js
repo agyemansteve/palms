@@ -2,15 +2,15 @@ import React from 'react';
 import './Footer.css';
 // import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import { Divider } from './Divider';
+// import { Divider } from './Divider';
 
 function Footer() {
   return (
     <div className='footer-container'>
         
-        <Divider
+        {/* <Divider
          bg="rgb(10 10 10 / 0%)"
-          >
+          > */}
         
         <div className="social-icons">
           <a
@@ -50,7 +50,7 @@ function Footer() {
              </a> */}
              
           </div> 
-           </Divider>
+           {/* </Divider> */}
       {/* <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join the Adventure newsletter to receive our best vacation deals
