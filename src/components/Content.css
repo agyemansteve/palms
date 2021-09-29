@@ -31,10 +31,11 @@
     }
 
     .content-text > h1 {
-        color: #a2a2a2;
-        padding: 12px;
-        font-size: 2em;
-        /* margin-top: 80px; */
+        color: #b17b4b;
+        padding-bottom: 2rem;
+        font-size: 3em;
+        font-weight: 200;
+        font-family: 'Font Awesome 5 Free';
     }
 
     .content-text > p {
@@ -73,6 +74,7 @@
         scroll-snap-align: start;
         justify-content: space-evenly;
         
+        
     }
 
 
@@ -101,8 +103,8 @@
         background: rgb(51 27 24 / 0%);
         background-size: contain;  
           /* border-bottom-style: solid; */
-        border-left-style: solid; 
-        border-right-style: solid;
+        /* border-left-style: solid; 
+        border-right-style: solid; */
         /* border-top-style: solid; */
         border-radius: 10px;
         color: #a47d5a;
@@ -116,9 +118,11 @@
     
 
     .content-text > h1 {
-        color: #a2a2a2;
-        padding: 12px;
-        font-size: 3em;
+        color: #b17b4b;
+    padding-bottom: 2rem;
+    font-size: 3em;
+    font-weight: 200;
+    font-family: 'Font Awesome 5 Free';
     }
 
   
