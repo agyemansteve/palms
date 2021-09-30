@@ -104,7 +104,11 @@
       //           //  handle errror later
       //         }       
       // }
+      // const hideTopLogo =()=>{
 
+      //   window.onscroll=
+
+      // }
       
 
     const handleScroll =()=>{
@@ -113,17 +117,13 @@
       
       
 
-      // const topSvg = document.querySelector(".top-svg");
-      const downArrow = document.querySelector(".down-arrow");
+       const topSvg = document.querySelector(".top-svg");
+      const downArrows = document.querySelectorAll(".fa-chevron-down");
 
-      if(downArrow===null){
-        return
-      }
+      // if(downArrows===null){
+      //   return
+      // }
 
-      
-      
-      
-      
       const optionTop = {
         root: null,
         threshold: 0,
@@ -136,41 +136,40 @@
       
           entries.forEach(entry=>{
 
-
             const navbar = document.querySelector(".navbar");
             const navMenu= document.querySelector(".nav-menu");
             const midSvg = document.querySelector("#divider-mid");
-            const welcome =document.querySelector("#welcome");
-            
-      
+
             if(!entry.isIntersecting){
               
-            
-              // navbar.style.backgroundImage="url(/images/kente.jpg)"
-              navbar.style.background=` transparent`;
+        
+              
               // "#f5f2f2"
               navbar.style.top="auto"
-              navbar.style.bottom="0"
-              midSvg.style.color="black";
-              midSvg.style.display="block"
+              // navbar.style.bottom="18px"
 
+                      if(midSvg === null){
+                        return
+                      }
+                      else{
+                        midSvg.style.color="black";
+                      midSvg.style.display="block"
+                      }
+                      
 
-              welcome.style.background=`linear-gradient(
-                182deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.88)) transparent`;
-
-
-              welcome.firstChild.nextSibling.style.backgroundColor="none"
-
-
-              if(window.innerWidth <= 796){
-                navMenu.style.width="100vw"
-                navbar.style.background=`black`;
-              }else{
-              navMenu.style.width="30vw"
-              // navbar.style.background=`#fcfef7`;
-            }
+                      if(window.innerWidth <= 796){
+                        navMenu.style.width="100vw"
+                        navbar.style.background=`black`;
+                        navbar.style.bottom="0"
+                      }else{
+                      navMenu.style.width="30vw"
+                        navbar.style.bottom="18px"
+                      // navbar.style.background=`#fcfef7`;
+                      navbar.style.background=` transparent`;
+                      
+                      }
               navbar.style.height="80px"
-            
+                
 
               
             }else{
@@ -178,21 +177,22 @@
               
               navbar.style.top="0"
               navbar.style.bottom="auto"
-              navbar.style.background="#ffffff00"
-              midSvg.style.display="none"
-             
-              welcome.style.background="black"
-              welcome.firstChild.nextSibling.style.background="none"
-             
-             
               
-              // navbar.style.backgroundImage="url()"
-            
-              navMenu.style.width="40vw"
-              if(window.innerWidth <= 796){
+              
+              if(midSvg === null){
+                return
+              }
+              else{
+                midSvg.style.display="none"
+                navMenu.style.width="40vw"
+              }
+              
+              if(window.innerWidth <= 796 ){
                 navMenu.style.width="100vw"
+                navbar.style.background="transparent"
               }else{
                   navMenu.style.width="32vw"
+                  navbar.style.background="#ffffff00"
               }
             
           
@@ -202,7 +202,60 @@
       
       },optionTop);
       
-      topObserver.observe(downArrow);
+
+
+      downArrows.forEach((arrow)=>{
+        topObserver.observe(arrow);
+      })
+      // topObserver.observe(downArrow);
+
+
+
+
+
+
+      // /////// SVG 
+    //   const svgOption = {
+    //     root: null,
+    //     threshold: .7,
+    //     rootMargin: "0px",
+      
+    //   };
+       
+    //   const svgObserver = new IntersectionObserver(function (entries,svgObserver){
+
+    //     if(window.innerWidth <= 768){
+    //          return
+    //        }
+      
+
+    //     entries.forEach(entry=>{
+    //     const mobileLogo = document.querySelector("#logo-mobile")
+      
+    //       if(!entry.isIntersecting){
+           
+            
+           
+    //         console.log(mobileLogo)
+
+    //         // mobileLogo.style.display ="none"
+            
+          
+
+            
+    //       }else{
+
+            
+    //         console.log(" no")
+          
+    //         // mobileLogo.stlye.display = "block"
+    //       }
+    //     // svgObserver.unobserve(entry.target)
+    //   });
+    
+    // },svgOption);
+    
+    // svgObserver.observe(topSvg);
 
 
     }
@@ -211,8 +264,20 @@
       useEffect(()=>{
         // getData()
         handleScroll()
+        // window.onscroll= function (){
+        //   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+        //     console.log("scrolled")
+        //   }else{
+        //     console.log("not scrolled")
+        //   }
+        // }
         
     },[])
+
+  //   useEffect(()=>{
+     
+      
+  // },[])
 
 
 
@@ -221,7 +286,7 @@
 
 
       return (
-        <div>
+        <div className="app  scale-in-center">
           <Router>
           <ScrollToTop />
           {/* <svg class="top-svg" width="100%"  viewBox="0 0 1200 250">
@@ -238,7 +303,7 @@
                   </Route> 
 
                   <Route path='/about' > 
-                      <Gallery slides={SliderData } />
+                      {/* <Gallery slides={SliderData } /> */}
                           
                                 <Content
                                 
@@ -252,10 +317,11 @@
                                   btnDisplay="none"
                                 para = {` "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
-                                src="images/bg1x.jpg"
+                                src="images/img3.jpg"
                                 flexDirection="row"
                                 //  to="/menu"
                                 /> 
+                                <Gallery slides={SliderData } />
 
                     
                   </Route >
@@ -281,12 +347,12 @@
                   <Route path='/contact'  > 
 
 
-
+{/* 
                                       <HeroSection
                                       backgroundImg={` url(/images/fd7.jpg) center`} 
                               title="CONTACT US"
                               // bgVideo='/videos/video-1.mp4'
-                              />
+                              /> */}
                                   
                                       <Contact /> 
                                       
@@ -296,7 +362,7 @@
                                       
                                 <Content
                                   // contentAnime="fade-up"
-                                  mainBg= {`url(/images/bg3.jpg) center fixed`} 
+                                  mainBg= {`black`} 
                                     // mainBg= "#1b0a08" 
                                     // textBg= "#331b1800"
                                     btnDisplay="none"
