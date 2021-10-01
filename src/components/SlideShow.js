@@ -32,11 +32,11 @@ export default function SlideShow (props){
                let counter = 0;
                
 
-               const interval1 = setInterval(
+                setInterval(
 
                         ()=>{
                                 setCurrent(counter)
-                                console.log(counter)
+                                
                                 counter ++;
                                 if(counter === length-1){
                                 counter = 0
@@ -49,7 +49,7 @@ export default function SlideShow (props){
 
 
         useEffect(()=>{
-                // autoSlide()
+                autoSlide()
         
         },[])
 

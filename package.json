@@ -2,7 +2,7 @@
   "name": "palms-lounge-v1",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://thepalms.netlify.app/",
+  "homepage": "https://thepalms.netlify.app/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -28,7 +28,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      
       "not op_mini all"
     ],
     "development": [

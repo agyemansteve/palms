@@ -47,7 +47,7 @@ function Navbar(props) {
         </svg> */}
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo logo-mobile bounce ' onClick={ScrollToTop}>
-          <div onClick={()=>{
+          <div id="logo-mobile" onClick={()=>{
 
                     setTimeout(()=>{
                       window.location.reload(true);
