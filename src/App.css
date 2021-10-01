@@ -110,7 +110,7 @@ transform: rotate(
     bottom: -69px;
     z-index: 0;
     transition: all 1s;
-    bottom: -81vh;
+    bottom: -88vh;
 }
 
 #divider-mid{
@@ -259,7 +259,7 @@ transform: rotate(
 }
 
 #welcome{
-  margin-top: 70vh;
+  margin-top: 65vh;
 }
 /* 
 .contact-text > h4::before {
