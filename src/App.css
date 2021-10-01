@@ -106,8 +106,8 @@ html{
 .mid-svg{
 transform: rotate( 
 180deg);
-    position: absolute;
-    bottom: -69px;
+    position: relative;
+    /* bottom: -69px; */
     z-index: 0;
     transition: all 1s;
     bottom: -67vh;

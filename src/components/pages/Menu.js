@@ -47,7 +47,7 @@
 
 
 
-    para = {   <a  style={{textDecoration: "none", color:"white" }} href="/images/mnu2.jpg" download> -Click to Here to Download- </a>}
+    para = {   <a  style={{textDecoration: "none", color:"white" }} href="/images/mnu2.jpg" download> ~ Click to Here to Download ~</a>}
     // src="images/img5.jpg"
     
       />
