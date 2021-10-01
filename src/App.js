@@ -148,13 +148,13 @@
               navbar.style.top="auto"
               // navbar.style.bottom="18px"
 
-                      if(midSvg === null){
-                        return
-                      }
-                      else{
-                        midSvg.style.color="black";
-                      midSvg.style.display="block"
-                      }
+                      // if(midSvg === null){
+                      //   return
+                      // }
+                      // else{
+                      //   midSvg.style.color="black";
+                      // midSvg.style.display="block";
+                      // }
                       
 
                       if(window.innerWidth <= 796){
@@ -183,7 +183,7 @@
                 return
               }
               else{
-                midSvg.style.display="none"
+                // midSvg.style.display="none"
                 navMenu.style.width="40vw"
               }
               

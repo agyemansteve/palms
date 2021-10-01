@@ -108,7 +108,7 @@ transform: rotate(
 180deg);
     position: absolute;
     bottom: -69px;
-    z-index: -1;
+    z-index: 0;
     transition: all 1s;
     bottom: -81vh;
 }
@@ -121,7 +121,7 @@ transform: rotate(
 .bottom-svg{
   position: relative;
   top: 0;
-  z-index: -1;
+  z-index: 0;
   margin-bottom: 58vh;
 }
 
