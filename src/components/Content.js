@@ -13,7 +13,11 @@ function Content (props){
 
 
     useEffect(()=>{
-        AOS.init({duration:1500});
+        AOS.init({
+            duration:3500,
+            offset:'-500px' ,
+           
+        });
       },[])
 
 

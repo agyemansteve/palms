@@ -9,6 +9,8 @@
     .content-image{
        
         width: 100%;
+        /* width: 88%;
+    margin: 95px; */
         /* border-radius: 5px; */
     
    
@@ -39,12 +41,12 @@
     }
 
     .content-text > p {
-        font-size: 1.5em;
+        font-size: 2em;
         font-family: ui-rounded;
-        padding: 22px;
+        padding: 0px;
         text-align: center;
-        color: #a2a2a2;
-        line-height: 1.5em;
+        color: white;
+        line-height: 1.7em;
        
     }
 
@@ -133,7 +135,7 @@
         /* width: 50%;
         height: 500px; */
         text-align: center;
-        color: #a2a2a2;
+        color: white;
         line-height: 1.5em;
         /* border-bottom-style: solid;  */
         

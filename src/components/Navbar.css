@@ -9,7 +9,7 @@
   font-size: 1.2rem;
   transition-duration: 1s;
   top: 0;
-  z-index: 999;
+  z-index: 8;
 }
 
 .active-link{
@@ -27,9 +27,12 @@
 
 .logo-mobile{
   display: none !important;
+  /* position: absolute;
+    top: -694%;
+    right: 31%; */
 }
 .navbar-logo {
-  color: rgb(51 27 24);
+  color: #703932;
     text-shadow: -13px 20px 4px rgb(0 0 0 / 13%);
  
   justify-self: start;
@@ -56,7 +59,8 @@
   text-align: center;
   /* width: 32vw; */
   justify-content: end;
-  margin-top: 2rem;
+  margin-top: 6rem;
+  margin-left: 17rem;
   transition-duration: 2s;
   /* border-bottom: 1px solid; */
 }
@@ -67,9 +71,9 @@
 }
 
 .nav-links {
-  color: #a47d5a;
+  color: white;
   /* font-size: 40px; */
-  text-shadow: 0px -1px 0px #080707;
+  text-shadow: -1px 1px 0px #080707;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -97,12 +101,17 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar{
+    background: black;
+  }
+  
   .NavbarItems {
     position: relative;
   }
 
  .logo-web{
    display: none !important;
+
  } 
 .logo-mobile{
   display: block !important;
@@ -116,7 +125,7 @@
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: -100%;
+    left: -166%;
     opacity: 1;
     transition: all 0.5s ease;
     justify-content: center;
@@ -125,8 +134,8 @@
 
   .nav-menu.active {
     background: black;
-    left: 0;
-    top: -33px;
+    left: -272px;
+    top: -96px;
     position: fixed;
     height: 102vh;
     opacity: 1;

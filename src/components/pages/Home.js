@@ -65,14 +65,14 @@ import useWindowDimensions from '../useWindowDimensions';
 
 
 
-<svg class="mid-svg" width="100%"  viewBox="0 0 1200 250">
+<svg className="mid-svg" width="100%"  viewBox="0 0 1200 250">
                  <path id="divider-mid"  d="M -1 3 C 551 113 173 37 764 154 L 1328 10 V 0 H 1150 C 1100 0 1000 0 900 0 C 800 0 700 0 600 0 C 500 0 400 0 300 0 C 200 0 100 0 50 0 H 0 V 5 Z" fill="currentColor"></path>
         </svg>
 
       <Content
           // contentAnime="fade-up"
-            // mainBg= {`linear-gradient(
-            //   182deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.88))`} 
+            mainBg= {`linear-gradient(
+              182deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.88))`} 
             // textBg= "#331b1800"
             // mainBg= "#1b0a08" 
             // textBg= "#1b0a08"
@@ -98,7 +98,7 @@ import useWindowDimensions from '../useWindowDimensions';
 // navbar.style.backgroundImage="url(/images/kente.jpg)"
 //  mainBg= {`url(/images/kente.jpg)`} 
 
-mainBg= {   width <= 796 ? `url(/images/img4.jpg) center fixed` : `#000000e0`} 
+mainBg= {   width <= 796 ? `#000000d4` : `#000000e0`} 
     textBg= {   width <= 796 ? `black` : 
 
 `none`
@@ -141,7 +141,7 @@ mainBg= {   width <= 796 ? `url(/images/img4.jpg) center fixed` : `#000000e0`}
             // id = " "
               /> 
 
-<svg class="bottom-svg" width="100%"  viewBox="0 0 1200 250">
+<svg className="bottom-svg" width="100%"  viewBox="0 0 1200 250">
                  <path id="divider-bottom"  d="M -1 3 C 551 113 173 37 764 154 L 1328 10 V 0 H 1150 C 1100 0 1000 0 900 0 C 800 0 700 0 600 0 C 500 0 400 0 300 0 C 200 0 100 0 50 0 H 0 V 5 Z" fill="currentColor"></path>
         </svg>
 
@@ -171,7 +171,7 @@ mainBg= {   width <= 796 ? `url(/images/img4.jpg) center fixed` : `#000000e0`}
       <Content
       
           // mainBg= "#331b18"
-          mainBg = "#1b0a08"
+          mainBg = "#000000"
           // textBg= " black"
           tittleAnime="fade-up"
           paraAnime="fade-down-left"

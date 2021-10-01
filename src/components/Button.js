@@ -35,9 +35,9 @@ export const Button = ({
 
 
   
-  if(to==="undefined"){
-    to="/"
-}
+//   if(to==="undefined" || "null"){
+//     to="/"
+// }
 
 
   return (

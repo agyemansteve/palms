@@ -29,9 +29,9 @@ export default function ContactCard (props){
 return ( 
 <div data-aos="zoom-in" className="contact-card-links">
     <a
-    className="contact-card-links"
+    className="contact-card-links bounce"
      href={props.href}
-    //  target='_blank'
+     target='_blank'
     //  rel="noopener noreferrer"
       aria-label={props.label}
     
