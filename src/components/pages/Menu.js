@@ -43,7 +43,7 @@
     // }}
     imgAnime="fade-right"
     flexDirection="column-reverse"
-    title="MENU"
+    // title="MENU"
 
 
 
