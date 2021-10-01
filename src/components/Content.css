@@ -137,11 +137,10 @@
         text-align: center;
         color: white;
         line-height: 1.5em;
-        /* border-bottom-style: solid;  */
+        border-bottom: solid #b17b4b; 
+        margin-bottom: 35px;
         
-        /* border-left-style: solid;
-        border-right-style: solid; 
-         /* border-top-style: solid; */
+
      
        
     }
