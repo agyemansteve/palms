@@ -1,5 +1,4 @@
-
-.contact-card-links{
+.contact-card-links {
   background: #000000;
   font-size: 16px;
   display: flex;
@@ -10,104 +9,72 @@
   text-decoration: none;
   box-shadow: -4px 0px 5px #b17b4b;
   border-radius: 80% 29%;
-    
-  }
+}
 
-  .contact-card-links:hover{
+.contact-card-links:hover {
+  background: #b17b4b00;
+}
 
-background: #b17b4b00;
+.contact-card-item {
+  margin: 10px;
+}
 
+.contact-card-links > i {
+  font-size: 43px;
+  padding: 16px;
+  background: #000000;
+  color: #b17b4b;
+  border-radius: 100%;
+  border: 3px solid #b17b4b;
+  text-decoration-style: none;
+}
 
-  }
-
-  .contact-card-item{
-    margin: 10px;
-  }
-  
-  .contact-card-links > i {
-    font-size: 43px;
-    padding: 16px;
-    background: #000000;
-    color: #b17b4b;
-    border-radius: 100%;
-    border: 3px solid #b17b4b;
-    text-decoration-style: none;
-    
-  }
-
-  
 .contact-card-links > p {
-    text-decoration-style: none;
-    text-shadow: -3px 3px 5px black,-3px 3px 5px black;
-    font-family: monospace;
-    font-size: 16px;
-    
-  }
+  text-decoration-style: none;
+  text-shadow: -3px 3px 5px black, -3px 3px 5px black;
+  font-family: monospace;
+  font-size: 16px;
+}
 
+.contact-card-links > i:hover {
+  /* color: rgb(255, 255, 255); */
+  font-size: 100px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 
-  .contact-card-links >i:hover{
-        
+.contact-card-item:hover {
+  color: #b17b4b;
+}
 
+/* *********************CONTENTCARDS******************************************************** */
 
-    /* color: rgb(255, 255, 255); */
-    font-size: 100px;
-    -webkit-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-
-  }
-
-  
-  .contact-card-item:hover{
-  
-    color: #b17b4b;
-  
-  }
-
-
- 
-  
-   /* *********************CONTENTCARDS******************************************************** */
-
-.contact-cards{
+.contact-cards {
   display: flex;
-  /* background: #a47d5a; */
   width: 100%;
   -ms-flex-pack: center;
   margin-top: 109px;
-  /* margin: 67px; */
+
   flex-direction: column;
   align-items: flex-end;
-
 }
 
-  /* .contact-card-container{
-      display: flex;
-      align-items: center;
-  }  */
-
-
-  @media screen and (max-width: 768px) {
-
-
-    .contact{
-      background: #9c7551
-    }
-      
-      .contact-cards{
-        display: flex;
-        background: #9c7551;
-        width: 100%;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin-top: 100px;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 100px;
-}
-
-
-
-
+@media screen and (max-width: 768px) {
+  .contact {
+    background: #9c7551;
   }
+
+  .contact-cards {
+    display: flex;
+    background: #9c7551;
+    width: 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 100px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+}

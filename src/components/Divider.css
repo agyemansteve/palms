@@ -1,19 +1,12 @@
-.divider{
-    /* background: #331b18; */
-    height: 8vh;
-    color: #a47d5a;
-    font-size: 86px;
-    display: flex;
-    justify-content: space-around;
-    /* text-align: center; */
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.divider {
+  /* background: #331b18; */
+  height: 8vh;
+  color: #a47d5a;
+  font-size: 86px;
+  display: flex;
+  justify-content: space-around;
+  /* text-align: center; */
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-
-/* @media screen and (min-width: 768px){
-    .divider{
-        background:white;
-    }
-} */

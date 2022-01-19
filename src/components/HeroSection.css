@@ -6,14 +6,14 @@ video {
   z-index: -1;
 }
 
-.top-svg{
+/* .top-svg {
   position: absolute;
-    top: 0;
+  top: 0;
 }
 
-#divider{
-  color: #080704;
-}
+#divider {
+  color: #080704bf;
+} */
 
 .hero-container {
   margin-top: 0;
@@ -30,18 +30,16 @@ video {
   object-fit: contain;
   overflow: hidden;
   /* scroll-snap-type: proximity; */
-  
-
 }
 
-.hero-text{
+.hero-text {
   position: relative;
-    top: 60%;
-    padding: 12px;
+  top: 60%;
+  padding: 12px;
 }
 
 .hero-text > h1 {
-  color:#a47d5a ;
+  color: #a47d5a;
   font-size: 100px;
   margin-top: -317px;
 }
@@ -50,27 +48,16 @@ video {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-
-/* .hero-btns {
-  margin-top: 33%; 
-    
-} */
-
-
-
-/* .hero-btns .btn {
-  margin: 6px;
-} */
 
 .fa-play-circle {
   margin-left: 4px;
 }
 
-.down-arrow{
-  font-size: 38px;
+.down-arrow {
+  font-size: 1.5rem;
   position: relative;
   top: 250px;
   color: #ffffff;
@@ -78,44 +65,29 @@ video {
   text-shadow: -1px 20px white;
 }
 
-
-
-/* 
-@media screen and (min-width: 746px) {
-  video{
-    position:fixed;
-  }
-} */
-
-
-
-
 @media screen and (max-width: 768px) {
   .hero-text > h1 {
-   font-size: 4em;
-   margin-top: -68px;
+    font-size: 4em;
+    margin-top: -68px;
   }
- 
-  #divider{
+
+  #divider {
     color: black;
   }
-.down-arrow{
-  top: 302px;
-}
+  .down-arrow {
+    top: 302px;
+  }
   .hero-btns {
     top: 55vh;
     position: absolute;
     left: 3%;
     padding: 0;
-}
+  }
 
-.hero-text{
-  margin-top: -50%;
-  padding: 12px;
-    /* top: 68%; */
-    /* left: 0; */
-    /* padding: 5px; */
-}
+  .hero-text {
+    margin-top: -50%;
+    padding: 12px;
+  }
 
   .hero-text > p {
     font-size: 19px;
@@ -124,10 +96,5 @@ video {
   .btn-mobile {
     display: block;
     text-decoration: none;
-
   }
-
-  /* .btn {
-    width: 100%;
-  } */
 }
