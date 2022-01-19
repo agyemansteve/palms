@@ -1,22 +1,10 @@
-// import React from 'react';
-// import './Button.css';
-// import { Link } from 'react-router-dom';
+import React from "react";
+import "./Button.css";
+import { Link } from "react-router-dom";
 
-// export function Button() {
-//   return (
-//     <Link to='sign-up'>
-//       <button className='btn'>Sign Up</button>
-//     </Link>
-//   );
-// }
+const STYLES = ["btn--primary", "btn--outline", "btn--test"];
 
-import React from 'react';
-import './Button.css';
-import { Link } from 'react-router-dom';
-
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
-
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ["btn--medium", "btn--large"];
 
 export const Button = ({
   children,
@@ -25,7 +13,7 @@ export const Button = ({
   onClick,
   to,
   buttonStyle,
-  buttonSize
+  buttonSize,
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -33,18 +21,11 @@ export const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-
-  
-//   if(to==="undefined" || "null"){
-//     to="/"
-// }
-
-
   return (
-    <Link to={to} className='btn-mobile'>
+    <Link to={to} className="btn-mobile">
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        style={{display: display }}
+        style={{ display: display }}
         onClick={onClick}
         type={type}
       >
