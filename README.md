@@ -3,4 +3,28 @@
 
 
 
- https://thepalms.netlify.app/
+
+Created with React
+
+
+
+
+ homepage : "https://thepalms.netlify.app/",
+    
+    
+    
+
+## Tech
+
+- ReactJS 
+- React-Redux
+- React-Router-dom 
+- React- Bootstrap
+- React-Scroll 
+
+
+
+
+## License
+
+MIT
